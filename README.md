@@ -6,7 +6,6 @@
 - Create rover
 - Send commands to rover (sample request above)
 - Get rover
-- Get rover state
 
 ## API
 - Passport api was used for testing (You can find in app.php file)
