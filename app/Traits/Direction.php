@@ -94,31 +94,30 @@ trait Direction
 
     public function move()
     {
-        //For example(N,M)
-        // $this->l[] = $this->compass_direction;
+       
         switch ($this->compass_direction) {
             case "N";
                 //If compass direction is N
                 if ($this->y < $this->y_matrix) {
-                    $this->y = ($this->y + 1);
+                    $this->y += 1;
                 }
                 break;
             case "S";
                 //If compass direction is S
                 if ($this->y > 0) {
-                    $this->y = ($this->y - 1);
+                    $this->y -= 1;
                 }
                 break;
             case "E";
                 //If compass direction is E
                 if ($this->x < $this->x_matrix) {
-                    $this->x = ($this->x + 1);
+                    $this->x += 1;
                 }
                 break;
             case "W";
                 //If compass direction is W
                 if ($this->x > 0) {
-                    $this->x = ($this->x - 1);
+                    $this->x -= 1;
                 }
                 break;
 
