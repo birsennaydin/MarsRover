@@ -102,29 +102,24 @@ trait Direction
                 if ($this->y < $this->y_matrix) {
                     $this->y = ($this->y + 1);
                 }
-                return $this->compass_direction;
-                //return $this->y;
                 break;
             case "S";
                 //If compass direction is S
                 if ($this->y > 0) {
                     $this->y = ($this->y - 1);
                 }
-                return $this->compass_direction;
                 break;
             case "E";
                 //If compass direction is E
                 if ($this->x < $this->x_matrix) {
                     $this->x = ($this->x + 1);
                 }
-                return $this->compass_direction;
                 break;
             case "W";
                 //If compass direction is W
                 if ($this->x > 0) {
                     $this->x = ($this->x - 1);
                 }
-                return $this->compass_direction;
                 break;
 
         }
